@@ -5,28 +5,6 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const Task = require('./Task');
 
-/**
- * @swagger
- * components:
- * 	schemas:
- * 		User:
- * 			type: object
- * 			required:
- * 				- name
- * 				- email
- * 				- password
- * 			properties:
- * 				id: 
- * 					type: String
- * 					description: The auto-generated id of the user
- * 				name:
- * 					type: String
- * 					description: The full name of the user
- * 				email:
- * 					type: String
- * 					description: The email of the user
- */
-
 const userSchema = new Schema(
 	{
 		name: {
