@@ -34,16 +34,6 @@ const router = express.Router();
  * 				description: Success
  */
 router.post('/users', CreateAccount);
-/** 
- * 
- * @swagger
- * /users:
- * 	post:
- * 		description: Sign up
- * 		responses:
- * 			200:
- * 				description: Success
- */
 router.post('/users/login', Login);
 
 router.use(auth);

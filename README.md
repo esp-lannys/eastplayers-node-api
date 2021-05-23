@@ -1,12 +1,12 @@
 # Task Management Application
 
-Task manager application built using NODE JS and MongoDB. The app sends an email notification upon registration and deactivation of the user's account.
+Task manager application built using NODE JS and MongoDB. The app sends an email (via sendgrid) notification upon registration and deactivation of the user's account.
 
 ## Features
 
 - Sending Emails
 - Authentication and Security
-- Task CRUD Operations
+- CRUD Operations
 
 ## How to run
 
@@ -29,6 +29,8 @@ Please use Postman to test the following endpoints
 | GET     | /users/tasks/taskID                | Private | View a Task                              |
 | GET     | /users/tasks                       | Private | View all Tasks                           |
 | GET     | /users/tasks?limit=2               | Private | Limit the result to 2                    |
+| GET     | /users/tasks?sortBy=createdAt:desc | Private | Sort by Descending order of created date |
+| GET     | /users/tasks?sortBy=createdAt:asc  | Private | Sort by Ascending order of created date  |
 | PATCH   | /users/tasks/taskID                | Private | Update a Task                            |
 | DELETE  | /users/tasks/taskID                | Private | Delete a Task                            |
 | POST    | /users/logout                      | Private | Logout an account                        |
