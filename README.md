@@ -8,6 +8,14 @@ Task manager application built using NODE JS and MongoDB. The app sends an email
 - Authentication and Security
 - Task CRUD Operations
 
+## How to run
+
+```
+npm install
+npm run dev
+```
+Please use Postman to test the following endpoints
+
 ## API Endpoints
 
 | Methods | Endpoints                          | Access  | Description                              |
